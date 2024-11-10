@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resume-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <textarea id="education" placeholder="Education"></textarea>
+        <textarea id="experience" placeholder="Work Experience"></textarea>
+        <input type="text" id="skills" placeholder="Skills (comma separated)">
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-display" style="display: none;"></div>
+
+    <a id="share-link" href="#" target="_blank">Share this resume</a>
+    <button id="download-btn">Download as PDF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
